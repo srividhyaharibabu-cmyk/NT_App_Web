@@ -1,0 +1,71 @@
+.weekly-score-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weekly-score-card h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.score-circle-container {
+    position: relative;
+    width: 160px;
+    height: 160px;
+}
+
+.score-svg {
+    transform: rotate(-90deg);
+}
+
+.score-bg {
+    fill: none;
+    stroke: #f0f0f0;
+    stroke-width: 15;
+}
+
+.score-progress {
+    fill: none;
+    stroke-width: 15;
+    stroke-linecap: round;
+    stroke-dasharray: 440;
+    /* 2 * PI * 70 */
+    transition: stroke-dashoffset 1s ease-in-out, stroke 0.3s ease;
+}
+
+.score-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.score-label {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.score-message {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: #555;
+    font-weight: 500;
+}
